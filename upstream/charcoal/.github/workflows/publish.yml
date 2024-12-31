@@ -1,0 +1,61 @@
+name: Publish to npmjs
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'リリースしたいバージョン名'
+        required: true
+      release_tag:
+        description: 'Release tag'
+        required: true
+        default: 'latest'
+        type: choice
+        options:
+          - latest
+          - beta
+          - rc
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install node dependencies
+        run: yarn install --immutable
+
+      - name: Set git username and email
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "actions-user"
+
+      - name: Set package version
+        env:
+          YARN_ENABLE_IMMUTABLE_INSTALLS: false
+        run: yarn lerna version ${{ github.event.inputs.version }} --no-push --force-publish --yes
+
+      - name: git push version up commits
+        run: |
+          git push origin ${{ github.ref_name }}
+
+      - name: Build & Publish to npmjs
+        run: yarn release -y from-package --dist-tag ${{ github.event.inputs.release_tag }}
+        env:
+          NPM_CONFIG_PROVENANCE: true
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "types": ["node", "vitest/globals"],
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // "noUncheckedIndexedAccess": true
+    "jsx": "react-jsx",
+    "declaration": true,
+    "declarationMap": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@charcoal-ui/*": ["./packages/*/src"]
+    }
+  }
+}

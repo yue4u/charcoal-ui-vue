@@ -1,0 +1,57 @@
+name: icons
+
+on:
+  schedule:
+    - cron: '0 1 * * 1'
+
+  workflow_dispatch:
+
+env:
+  OUTPUT_ROOT_DIR: packages/icon-files/
+  TARGET_BRANCH: ${{ github.event_name == 'workflow_dispatch' && github.ref_name || 'main' }}
+
+jobs:
+  icons:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+
+      - name: Prepare deps
+        run: |
+          yarn install --immutable --inline-builds
+          yarn workspaces foreach -vptR --from @charcoal-ui/icons-cli run build
+
+      - name: Export
+        env:
+          FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        run: yarn icons-cli figma:export
+
+      - name: Optimize
+        run: yarn icons-cli svg:optimize --ignoreFile ./misc/icons-cli-denylist
+
+      - name: Generate source
+        run: yarn icons-cli files:generate
+
+      - name: Generate github token
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.CHARCOAL_BOT_APP_ID }}
+          private_key: ${{ secrets.CHARCOAL_BOT_PRIVATE_KEY }}
+
+      - name: Create a Pull Request
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ steps.generate_token.outputs.token }}
+          GITHUB_REPO_OWNER: pixiv
+          GITHUB_REPO_NAME: charcoal
+          GITHUB_DEFAULT_BRANCH: ${{ env.TARGET_BRANCH }}
+        run: yarn icons-cli github:pr

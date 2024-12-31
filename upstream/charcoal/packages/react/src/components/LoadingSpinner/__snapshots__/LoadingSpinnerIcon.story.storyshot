@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storybook Tests LoadingSpinnerIcon Icon 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    className="charcoal-loading-spinner-icon"
+    data-once={false}
+    role="presentation"
+  />
+</div>
+`;

@@ -1,0 +1,43 @@
+{
+  "name": "@charcoal-ui/foundation",
+  "version": "4.0.0",
+  "license": "Apache-2.0",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.cjs.js",
+    "import": "./dist/index.esm.js",
+    "default": "./dist/index.esm.js"
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "run-p --print-label 'build:*'",
+    "build:bundle": "FORCE_COLOR=1 tsup",
+    "build:dts": "tsc --project tsconfig.build.json --pretty --emitDeclarationOnly",
+    "typecheck": "tsc --project tsconfig.build.json --pretty --noEmit",
+    "clean": "rimraf dist .tsbuildinfo",
+    "test": "vitest run --passWithNoTests"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.5",
+    "vitest": "^2.0.1"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixiv/charcoal.git",
+    "directory": "packages/foundation"
+  },
+  "gitHead": "e1ece2e43901ae667afdd5c178040607d939dcd5"
+}

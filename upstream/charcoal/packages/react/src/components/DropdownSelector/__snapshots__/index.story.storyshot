@@ -1,0 +1,1416 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storybook Tests > react/DropdownSelector > AssistiveText 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-describedby="test-id"
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+      <div
+        className="charcoal-text-field-assistive-text"
+        data-invalid={false}
+        id="test-id"
+      >
+        assistiveText
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > CustomChildren 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="bold"
+        >
+          <option
+            value="normal"
+          >
+            normal
+          </option>
+          <option
+            value="bold"
+          >
+            bold
+          </option>
+          <option
+            value="italic"
+          >
+            italic
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          <div
+            style={
+              Object {
+                "fontWeight": "bold",
+              }
+            }
+          >
+            Bold
+          </div>
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > Default 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        />
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value=""
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        />
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > Disabled 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      aria-disabled={true}
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > DisabledItem 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="2"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            disabled={true}
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+          <option
+            value="4"
+          >
+            4
+          </option>
+          <option
+            value="5"
+          >
+            5
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 2 (disabled)
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > InFormTag 1`] = `
+<div
+  data-dark={false}
+>
+  <form
+    onSubmit={[Function]}
+    style={
+      Object {
+        "display": "flex",
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          name="exampleOption"
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+    <button
+      className="charcoal-button"
+      data-variant="Primary"
+      style={
+        Object {
+          "marginLeft": 16,
+        }
+      }
+      type="submit"
+    >
+      submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > InModal 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "height": "10px",
+      }
+    }
+  >
+    <button
+      onClick={[Function]}
+    >
+      open
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > Invalid 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-invalid={true}
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > InvalidAssistiveText 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-describedby="test-id"
+        aria-invalid={true}
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+      <div
+        className="charcoal-text-field-assistive-text"
+        data-invalid={true}
+        id="test-id"
+      >
+        assistiveText
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > Label 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > LongNames 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > RequiredText 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-required-text"
+        >
+          required
+        </div>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > Section 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span />
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="banana"
+        >
+          <option
+            value="apple"
+          >
+            apple
+          </option>
+          <option
+            value="banana"
+          >
+            banana
+          </option>
+          <option
+            value="orange"
+          >
+            orange
+          </option>
+          <option
+            value="bicycle"
+          >
+            bicycle
+          </option>
+          <option
+            value="car"
+          >
+            car
+          </option>
+          <option
+            value="train"
+          >
+            train
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Banana
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storybook Tests > react/DropdownSelector > SubLabel 1`] = `
+<div
+  data-dark={false}
+>
+  <div
+    style={
+      Object {
+        "width": 288,
+      }
+    }
+  >
+    <div
+      className="charcoal-dropdown-selector-root"
+    >
+      <div
+        className="charcoal-field-label-root"
+      >
+        <label
+          className="charcoal-field-label"
+          id="test-id"
+        >
+          Label
+        </label>
+        <div
+          className="charcoal-field-label-sub-label"
+        >
+          <span>
+            SubLabel
+          </span>
+        </div>
+      </div>
+      <div
+        aria-hidden="true"
+        style={
+          Object {
+            "border": 0,
+            "clip": "rect(0 0 0 0)",
+            "clipPath": "inset(50%)",
+            "height": "1px",
+            "margin": "-1px",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "absolute",
+            "whiteSpace": "nowrap",
+            "width": "1px",
+          }
+        }
+      >
+        <select
+          onChange={[Function]}
+          tabIndex={-1}
+          value="1"
+        >
+          <option
+            value="1"
+          >
+            1
+          </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
+          <option
+            value="3"
+          >
+            3
+          </option>
+        </select>
+      </div>
+      <button
+        aria-labelledby="test-id"
+        className="charcoal-dropdown-selector-button"
+        data-active={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="charcoal-ui-dropdown-selector-text"
+          data-placeholder={false}
+        >
+          Option 1
+        </span>
+        <pixiv-icon
+          class="charcoal-ui-dropdown-selector-icon"
+          name="16/Menu"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

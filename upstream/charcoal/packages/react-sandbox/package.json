@@ -1,0 +1,84 @@
+{
+  "name": "@charcoal-ui/react-sandbox",
+  "version": "4.0.0",
+  "license": "Apache-2.0",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.cjs.js",
+    "import": "./dist/index.esm.js",
+    "default": "./dist/index.esm.js"
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "run-p --print-label 'build:*'",
+    "build:bundle": "FORCE_COLOR=1 tsup",
+    "build:dts": "tsc --project tsconfig.build.json --pretty --emitDeclarationOnly",
+    "typecheck": "tsc --project tsconfig.build.json --pretty --noEmit",
+    "clean": "rimraf dist .tsbuildinfo",
+    "test": "vitest run --passWithNoTests"
+  },
+  "devDependencies": {
+    "@charcoal-ui/esbuild-plugin-styled-components": "^4.0.0",
+    "@storybook/addon-actions": "^7.4.1",
+    "@storybook/addon-knobs": "^7.0.2",
+    "@storybook/addons": "^7.4.1",
+    "@storybook/api": "^7.4.1",
+    "@storybook/components": "^7.4.1",
+    "@storybook/core-events": "^7.4.1",
+    "@storybook/react": "^7.4.1",
+    "@storybook/theming": "^7.4.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
+    "@types/jest-axe": "^3.5.3",
+    "@types/react": "^17.0.38",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.21",
+    "@types/warning": "^3.0.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jest-axe": "^5.0.1",
+    "jsdom": "^24.1.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "rimraf": "^3.0.2",
+    "styled-components": "^5.3.3",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.5",
+    "use-resize-observer": "^9.1.0",
+    "vitest": "^2.0.2"
+  },
+  "dependencies": {
+    "@charcoal-ui/foundation": "^4.0.0",
+    "@charcoal-ui/react": "^4.0.0",
+    "@charcoal-ui/styled": "^4.0.0",
+    "@charcoal-ui/theme": "^4.0.0",
+    "@charcoal-ui/utils": "^4.0.0",
+    "polished": "^4.1.4",
+    "react-spring": "^9.0.0",
+    "warning": "^4.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=16.13.1",
+    "styled-components": ">=5.1.1"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixiv/charcoal.git",
+    "directory": "packages/react-sandbox"
+  },
+  "gitHead": "e1ece2e43901ae667afdd5c178040607d939dcd5"
+}

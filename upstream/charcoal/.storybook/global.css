@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+:root {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#storybook-docs pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}

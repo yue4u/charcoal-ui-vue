@@ -1,0 +1,36 @@
+name: gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  storybook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: '.node-version'
+          cache: yarn
+
+      - name: Prepare deps
+        run: |
+          yarn install --immutable --inline-builds
+          yarn build
+
+      - name: Output files
+        run: |
+          yarn storybook:build -o public-pages --quiet
+          cp .storybook/badge.svg public-pages/storybook-badge.svg
+          mv pages public-pages/docs
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public-pages

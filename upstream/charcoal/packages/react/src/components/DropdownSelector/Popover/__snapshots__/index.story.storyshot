@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storybook Tests > react/internals/Popover > Basic 1`] = `
+<div
+  data-dark={false}
+>
+  <button
+    className="charcoal-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "position": "absolute",
+      }
+    }
+  >
+    button
+  </button>
+  <button
+    className="charcoal-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "position": "absolute",
+        "right": 8,
+      }
+    }
+  >
+    button
+  </button>
+  <button
+    className="charcoal-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": 8,
+        "position": "absolute",
+      }
+    }
+  >
+    button
+  </button>
+  <button
+    className="charcoal-button"
+    onClick={[Function]}
+    style={
+      Object {
+        "bottom": 8,
+        "position": "absolute",
+        "right": 8,
+      }
+    }
+  >
+    button
+  </button>
+</div>
+`;

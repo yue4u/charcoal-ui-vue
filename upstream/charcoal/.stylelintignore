@@ -1,0 +1,7 @@
+dist/
+node_modules/
+__snapshots__/
+.yarn/
+/public/
+/storybook-static/
+/coverage/

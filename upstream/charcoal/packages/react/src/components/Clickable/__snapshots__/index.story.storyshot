@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storybook Tests > react/Clickable > Button 1`] = `
+<div
+  data-dark={false}
+>
+  <button
+    className="charcoal-clickable"
+    onClick={[Function]}
+  >
+    button
+  </button>
+</div>
+`;
+
+exports[`Storybook Tests > react/Clickable > Link 1`] = `
+<div
+  data-dark={false}
+>
+  <a
+    className="charcoal-clickable"
+    href="#"
+    onClick={[Function]}
+  >
+    link
+  </a>
+</div>
+`;

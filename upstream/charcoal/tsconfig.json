@@ -1,0 +1,31 @@
+// ビルドツールなどの設定ファイルのためのTSConfig
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "checkJs": true,
+    "module": "esnext",
+    "types": ["node", "vitest/globals"],
+    "noEmit": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": [
+    "**/*.config.cjs",
+    "**/*.config.mjs",
+    "**/*.config.js",
+    "**/*.config.ts",
+    "misc/*.mjs",
+    "**/.*.cjs",
+    "**/.*.js",
+    "__mocks__/*.ts",
+    "vite.config.ts",
+    "vitest.setup.ts"
+  ],
+  "exclude": ["docs", ".storybook"]
+}
