@@ -9,6 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    "storybook-dark-mode",
   ],
   framework: {
     name: "@storybook/vue3-vite",
@@ -16,7 +17,17 @@ const config: StorybookConfig = {
   },
   viteFinal(config) {
     return mergeConfig(config, {
-      plugins: [vue()],
+      plugins: [
+        vue({
+          template: {
+            compilerOptions: {
+              isCustomElement(tag) {
+                return tag === "pixiv-icon";
+              },
+            },
+          },
+        }),
+      ],
     });
   },
 };
